@@ -1,0 +1,45 @@
+### listar()
+GET http://localhost:3000/disciplinas
+Content-Type: application/json
+
+###
+
+### listar(nome)
+GET http://localhost:3000/disciplinas?nome=ao
+Content-Type: application/json
+
+###
+
+### consultar()
+GET http://localhost:3000/disciplinas/a
+Content-Type: application/json
+
+###
+
+### adicionar()
+POST http://localhost:3000/disciplinas
+Content-Type: application/json
+
+{
+  "nome": "Disciplina Inserida",
+  "cargaHoraria": 8888888,
+  "obrigatoria": true
+}
+
+###
+
+### atualizar()
+PUT http://localhost:3000/disciplinas/a
+Content-Type: application/json
+
+{
+  "nome": "Disciplina Atualizada",
+  "cargaHoraria": 200,
+  "obrigatoria": false
+}
+
+###
+
+### remover()
+DELETE http://localhost:3000/disciplinas/a
+Content-Type: application/json
