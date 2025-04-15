@@ -1,5 +1,4 @@
 const { v4: uuidv4 } = require("uuid");
-const porta = 3000;
 
 const disciplinas = [
   {

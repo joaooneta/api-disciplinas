@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const porta = 3000;
 
 const repo = require("./disciplinasRepository");
 
@@ -46,6 +46,6 @@ app.delete("/disciplinas/:id", (req, res) => {
   res.json(disciplinaRemovida);
 });
 
-app.listen(port, () => {
+app.listen(porta, () => {
   console.log("Rodando...");
 });
